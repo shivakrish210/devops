@@ -5,13 +5,13 @@
 </target>
 <target name="package" depends="compile" description="packaging the the file">
 <mkdir dir="build/jars"/>
-<jar destfile="build/jars/EnhancedFor.jar" basedir="build/classes">
+<jar destfile="build/jars/BinaryConverter.jar" basedir="build/classes">
 <manifest>
-<attribute name="Main-Class" value="EnhancedFor"/>
+<attribute name="Main-Class" value="BinaryConverter"/>
 </manifest>
 </jar>
 </target>
 <target name="run" depends="package" description="run the package">
-<java jar="build/jars/EnhancedFor.jar" fork="true"/>
+<java jar="build/jars/BinaryConverter.jar" fork="true"/>
 </target>
 </project>
